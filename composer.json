@@ -1,0 +1,21 @@
+{
+  "name": "rf/api",
+  "description": "Symfony api simplifier",
+  "type": "symfony-bundle",
+  "keywords": ["symfony", "symfony5", "api", "rest"],
+  "license": "MIT",
+  "version": "1.0.0",
+  "require": {
+    "php": ">=8.0",
+    "symfony/serializer": "5.3.*",
+    "symfony/validator": "5.3.*",
+    "symfony/yaml": "5.3.*",
+    "doctrine/annotations": "^1.13",
+    "ramsey/uuid": "^4.2"
+  },
+  "autoload": {
+    "psr-4" : {
+      "Rf\\ApiBundle\\" : "src"
+    }
+  }
+}
