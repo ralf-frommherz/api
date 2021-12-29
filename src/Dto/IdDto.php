@@ -8,7 +8,7 @@ use Ramsey\Uuid\Uuid;
 /**
  * Class IdDto
  * @package Rf\ApiBundle\Dto
- * @author Ralf Frommherz <ralf@frommherz.me>
+ * @author Ralf Frommherz
  */
 class IdDto extends ApiDto
 {

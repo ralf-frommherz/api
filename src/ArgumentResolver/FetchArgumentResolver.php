@@ -18,7 +18,7 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 /**
  * Class FetchArgumentResolver
  * @package Rf\ApiBundle\ArgumentResolver
- * @author Ralf Frommherz <ralf@frommherz.me>
+ * @author Ralf Frommherz
  */
 class FetchArgumentResolver implements ArgumentValueResolverInterface
 {

@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Class CallbackDto
  * @package Rf\ApiBundle\Dto
- * @author Ralf Frommherz <ralf@frommherz.me>
+ * @author Ralf Frommherz
  */
 abstract class CallbackDto extends IdDto
 {
