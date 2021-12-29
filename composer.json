@@ -1,5 +1,5 @@
 {
-  "name": "rf/api",
+  "name": "rfrommherz/api",
   "description": "Symfony api simplifier",
   "type": "symfony-bundle",
   "keywords": ["symfony", "symfony5", "api", "rest"],
