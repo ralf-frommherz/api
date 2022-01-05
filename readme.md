@@ -1,11 +1,13 @@
 # Api Bundle
-## installation
-1. **config/bundles.php**: Add new bundle to bundles.php
+## Installation
+1. `composer req rfrommherz/api`
+2. **config/bundles.php**: Add new bundle to bundles.php
+
 ```php
-Rf\ApiBundle\ApiBundle::class => ['dev' => true],
+Rf\ApiBundle\JwtBundle::class => ['dev' => true],
 ```
 
-## usage
+## Usage
 ### ApiDto
 ApiDto's can be used as parameters in your controllers. To enable the support for this, your class must extend ApiDto.
 Each ApiDto is passed to the symfony validator, which enables the support for validation annotations.
