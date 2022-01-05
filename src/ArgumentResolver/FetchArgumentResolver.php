@@ -3,8 +3,6 @@
 namespace Rf\ApiBundle\ArgumentResolver;
 
 
-use JetBrains\PhpStorm\NoReturn;
-use JetBrains\PhpStorm\Pure;
 use ReflectionClass;
 use ReflectionException;
 use Rf\ApiBundle\Dto\ApiDto;
@@ -35,7 +33,7 @@ class FetchArgumentResolver implements ArgumentValueResolverInterface
      * @return bool
      * @throws ReflectionException
      */
-    #[Pure] public function supports(Request $request, ArgumentMetadata $argument): bool
+    public function supports(Request $request, ArgumentMetadata $argument): bool
     {
         $reflectionClass = new ReflectionClass($argument->getType());
         return $reflectionClass->isSubclassOf(ApiDto::class);
@@ -46,10 +44,10 @@ class FetchArgumentResolver implements ArgumentValueResolverInterface
      *
      * @param Request $request
      * @param ArgumentMetadata $argument
-     * @return void
+     * @return iterable
      * @throws ReflectionException
      */
-    #[NoReturn] public function resolve(Request $request, ArgumentMetadata $argument)
+    public function resolve(Request $request, ArgumentMetadata $argument) : iterable
     {
         $propertyAccessor = PropertyAccess::createPropertyAccessor();
 
